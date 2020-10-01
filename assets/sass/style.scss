@@ -247,6 +247,7 @@ body {
     border: 0;
     border-radius: 15px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
     .card-icon {
       i {
         font-size: 50px;
@@ -260,15 +261,16 @@ body {
       position: relative;
       display: inline-block;
       padding-bottom: 15px;
+      font-size: 20px;
       &::after {
         content: "";
         position: absolute;
         background-color: #ddd;
         width: 60px;
         height: 0.5px;
-        left: 43%;
+        left: 50%;
         bottom: 0;
-        transform: translate(0, -43%);
+        transform: translate(-50%, 0);
       }
     }
     .card-text {
@@ -301,6 +303,7 @@ body {
     font-weight: bold;
     position: relative;
     padding-bottom: 20px;
+    font-size: 20px;
     &::after {
       content: "";
       position: absolute;
@@ -328,6 +331,7 @@ body {
       display: inline-block;
       padding-bottom: 12px;
       color: #50504e;
+      font-size: 20px;
       &::after {
         content: "";
         position: absolute;
@@ -347,6 +351,7 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     padding-right: 70px;
     margin-bottom: 20px;
+    background-color: #fff;
     .card-img {
       img {
         width: 45px;
@@ -409,6 +414,7 @@ body {
       position: relative;
       display: inline-block;
       padding-bottom: 12px;
+      font-size: 20px;
       color: #fff;
       &::after {
         content: "";
@@ -427,30 +433,9 @@ body {
     margin-bottom: 50px;
     img{
       height: 490px;
+      max-height: auto;
       margin: auto;
       width: 100%;
-    }
-  }
-  .slick-prev {
-    left: 47%;
-    top: 100%;
-    z-index: 99;
-    &::before {
-      @extend %initlizeFonAwesomeAfter;
-      @extend %headerArrows;
-      content: "\f053";
-      font-size: 15px;
-    }
-  }
-  .slick-next {
-    right: 46%;
-    top: 100%;
-    bottom: 0;
-    &::before {
-      @extend %initlizeFonAwesomeAfter;
-      @extend %headerArrows;
-      content: "\f054";
-      font-size: 15px;
     }
   }
 }
@@ -507,27 +492,11 @@ footer{
       margin-top: 50px !important;
     }
   }
-  .footer-navbar{
-    position: relative;
-    z-index: 999;
-    color: #fff;
-    text-align: center;
-    .nav-link{
-      color: #fff !important;
-      margin: 10px;
-    }
-    .active{
-      .nav-link{
-        background-color: #F6DA63;
-        border-radius: 20px;
-        color: #000 !important;
-      }
-    }
-  }
   .download{
     text-align: center;
     position: relative;
     z-index: 9;
+    margin-top: 20px;
   }
   .follow-us {
     text-align: center;
@@ -583,14 +552,8 @@ footer{
     height: auto;
     padding-bottom: 50px;
   }
-  .screen-monitor .slider-item img{
-    height: auto;
-  }
-  .screen-monitor .slick-next{
-    right: 42%;
-  }
-  .screen-monitor .slick-prev{
-    left: 44%;
+  .screen-monitor img{
+    height: 540px !important;
   }
 }
 
