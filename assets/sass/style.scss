@@ -170,6 +170,7 @@ body {
       position: relative;
       display: inline-block;
       padding-bottom: 12px;
+      font-size: 20px;
       &::after {
         content: "";
         position: absolute;
@@ -182,7 +183,7 @@ body {
     }
   }
   p {
-    margin-top: 20px;
+    // margin-top: 20px;
     margin-right: -90px;
     line-height: 30px;
     font-weight: bold;
@@ -191,6 +192,7 @@ body {
     margin-right: -90px;
     background-color: #545252;
     color: #fff;
+    margin-top: 20px;
     border-radius: 15px;
     i {
       font-size: 12px;
@@ -199,6 +201,13 @@ body {
   }
   img {
     height: 376px;
+  }
+  ul{
+    li{
+      h5{
+        line-height: 20px;
+      }
+    }
   }
 }
 
@@ -229,6 +238,7 @@ body {
       display: inline-block;
       padding-bottom: 12px;
       color: #50504e;
+      font-size: 20px;
       &::after {
         content: "";
         position: absolute;
